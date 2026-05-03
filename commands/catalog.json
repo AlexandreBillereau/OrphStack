@@ -1,13 +1,18 @@
 {
   "commands": [
     {
+      "name": "wordpress init",
+      "description": "Créer .orphstack-init à la racine WordPress pour activer le contexte projet OrphStack",
+      "npx": "npx @orphstack/wordpress-init -- "
+    },
+    {
       "name": "setup plugin",
-      "description": "Scaffold a plugin from your boilerplate under wp-content/plugins",
+      "description": "Scaffold un plugin depuis le boilerplate dans wp-content/plugins (ajoute aussi .orphstack-plugin)",
       "npx": "npx @orphstack/plugin-setup -- "
     },
     {
       "name": "model",
-      "description": "Generate PHP from an ACF field group JSON export",
+      "description": "Générer du PHP depuis un export JSON de groupe de champs ACF",
       "npx": "npx @orphstack/acf-model -- "
     },
     {

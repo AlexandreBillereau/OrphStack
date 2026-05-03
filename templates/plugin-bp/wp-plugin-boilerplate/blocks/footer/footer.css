@@ -1,0 +1,100 @@
+.orphic-plugin-boilerplate-footer{
+    background-color:var(--wp--preset--color--black);
+    color:var(--wp--preset--color--white);
+    padding:20px 0 20px;
+}
+
+.orphic-plugin-boilerplate-footer a{
+    text-decoration:none;
+}
+
+.orphic-plugin-boilerplate-footer-container,
+.orphic-plugin-boilerplate-top-footer{
+    max-width: var(--wp--style--global--wide-size);
+    margin:auto;
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    padding:0 20px;
+    position:relative;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.orphic-plugin-boilerplate-top-footer{
+    margin-bottom:30px;
+    align-items:center;
+}
+
+.orphic-plugin-boilerplate-footer-logo{
+    width:50px;
+    flex-shrink:0;
+    flex-grow:0;
+}
+
+.orphic-plugin-boilerplate-footer-logo img{
+    width:100%;
+}
+
+.orphic-plugin-boilerplate-footer-menu-title{
+    font-size:0.9rem;
+    font-weight:600;
+    margin:0;
+    margin-bottom:10px;
+}
+
+.orphic-plugin-boilerplate-footer-menu-link{
+    font-size:0.9rem;
+    margin:0;
+    display:block;
+}
+
+.orphic-plugin-boilerplate-footer-menus{
+    width:100%;
+    display:flex;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.orphic-plugin-boilerplate-subfooter{
+    max-width: var(--wp--style--global--wide-size);
+    padding:0 75px 0 20px;
+    margin:auto;
+    margin-top:30px;
+    padding-top:20px;
+    border-top:1px solid var(--wp--preset--color--white);
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.orphic-plugin-boilerplate-footer-socials{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.orphic-plugin-boilerplate-politiques-menu-link{
+    font-size:0.8rem;
+    margin-right:15px;
+}
+
+.orphic-plugin-boilerplate-social-link{
+    background:var(--wp--preset--color--white);
+    padding:5px;
+    border-radius:100%;
+    width:35px;
+    height:35px;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.orphic-plugin-boilerplate-social-link svg{
+    fill:var(--wp--preset--color--black);
+}

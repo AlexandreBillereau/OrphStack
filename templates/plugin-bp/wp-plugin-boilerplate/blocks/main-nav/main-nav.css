@@ -1,0 +1,146 @@
+.orphic-plugin-boilerplate-main-nav{
+    width:100%;
+    background-color:var(--wp--preset--color--accent);
+    color:#ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition:background-color 200ms ease;
+}
+
+.admin-bar .orphic-plugin-boilerplate-main-nav{
+    top:32px;
+}
+
+/* TODO: do we want primary when scrolled? If not we may need to have a secondary logo for contrast */
+html:not([data-scroll='0']) .orphic-plugin-boilerplate-main-nav{
+    background-color:var(--wp--preset--color--accent);
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15); 
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
+ }
+
+.orphic-plugin-boilerplate-main-nav a{
+    text-decoration:none;
+}
+
+.orphic-plugin-boilerplate-main-nav-container{
+    max-width: var(--wp--style--global--wide-size);
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 10px 0;
+    position:relative;
+}
+
+.orphic-plugin-boilerplate-main-nav-logo{
+    width:200px;
+    flex-shrink:0;
+    flex-grow:0;
+}
+
+.orphic-plugin-boilerplate-main-nav-logo img{
+    width:100%;
+}
+
+.orphic-plugin-boilerplate-main-nav-items-wrap{
+    margin-left:20px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:center;
+}
+
+.orphic-plugin-boilerplate-main-nav-top-bar{
+    display: flex;
+    align-items:center;
+    gap:15px;
+    margin-right:1.333em;
+}
+
+.orphic-plugin-boilerplate-main-nav-items{
+    display:flex;
+    align-items:center;
+    margin:10px 0;
+    gap:20px;
+}
+
+.orphic-plugin-boilerplate-main-nav .orphic-plugin-boilerplate-template-button{
+    text-transform: uppercase;
+}
+
+.main-nav-top-link,
+.main-nav-primary-link{
+    text-transform: uppercase;
+}
+
+.main-nav-top-link{
+    font-size:0.8rem;
+}
+
+.orphic-plugin-boilerplate-main-nav-items-wrap.mobile,
+.orphic-plugin-boilerplate-main-nav-mobile {
+    display:none;
+}
+
+.orphic-plugin-boilerplate-mobile-nav-toggle{
+    width:31px;
+    height:35px;
+    padding-top:1px;
+    cursor:pointer;
+}
+.orphic-plugin-boilerplate-mobile-nav-toggle .line-1,
+.orphic-plugin-boilerplate-mobile-nav-toggle .line-2,
+.orphic-plugin-boilerplate-mobile-nav-toggle .line-3{
+    width:100%;
+    height:2px;
+    background:white;
+    margin-top:7px;
+    margin-left:auto;
+    transition:width 200ms ease;
+}
+
+.orphic-plugin-boilerplate-mobile-nav-toggle.open .line-2{
+    width:66%;
+}
+.orphic-plugin-boilerplate-mobile-nav-toggle.open .line-3{
+    width:33%;
+}
+
+@media (max-width:1050px){
+    .orphic-plugin-boilerplate-main-nav-items-wrap.mobile {
+        display:flex;
+    }
+
+    .orphic-plugin-boilerplate-main-nav-items-wrap.desktop {
+        display:none;
+    }
+
+    .orphic-plugin-boilerplate-main-nav-container{
+        align-items:flex-start;
+    }
+
+    .orphic-plugin-boilerplate-main-nav-items{
+        margin-right:1.333em;
+    }
+
+    .orphic-plugin-boilerplate-main-nav-mobile{
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        gap: 12px;
+        background: var(--wp--preset--color--primary-alt);
+        margin: 10px;
+        border-radius: 8px;
+    }
+
+    .orphic-plugin-boilerplate-main-nav-mobile .orphic-plugin-boilerplate-template-button{
+        align-self:center;
+    }
+
+    .orphic-plugin-boilerplate-main-nav-logo{
+        width:172px;
+    }
+}

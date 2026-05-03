@@ -1,0 +1,22 @@
+{
+  "apiVersion": 2,
+  "name": "acf/main-nav",
+  "title": "Menu de navigation principal",
+  "description": "Les items de ce menu peuvent être modifiés dans les options du thème",
+  "style": "file:./main-nav.css",
+  "script": "orphic-plugin-boilerplate-main-nav-block-script",
+  "category": "theme",
+  "icon": "welcome-view-site",
+  "keywords": ["main-nav", "navigation", "menu"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "main-nav.php",
+    "jsx": false
+  },
+  "supports": {
+    "mode": false,
+    "anchor": true
+  },
+  "align": "full",
+  "TODO_ALEX": "// TODO ALEX: test file: et vice-versa avec le style aussi (voir si ça met la version du plugin ou de Wordpress quand ça load le fichier)"
+}

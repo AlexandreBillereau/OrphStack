@@ -1,20 +1,33 @@
 {
   "name": "orphstack",
-  "module": "src/index.tsx",
-  "type": "module",
+  "version": "0.0.1",
   "private": true,
+  "description": "WordPress tooling CLI (step-by-step prompts via Clack)",
+  "type": "module",
+  "bin": {
+    "orphstack": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "commands",
+    "templates"
+  ],
   "scripts": {
-    "dev": "bun run --watch src/index.tsx"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "orphstack": "tsx src/index.ts",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
   },
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
-    "@opentui/core": "^0.2.1",
-    "@opentui/react": "^0.2.1",
-    "react": "^19.2.4"
+    "@clack/prompts": "^0.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
   }
 }

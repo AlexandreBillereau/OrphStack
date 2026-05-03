@@ -1,0 +1,21 @@
+{
+    "apiVersion": 2,
+    "name": "acf/footer",
+    "title": "Pied de page",
+    "description": "Les items de ce menu peuvent être modifiés dans les options du thème",
+    "style": "file:./footer.css",
+    "category": "theme",
+    "icon": "welcome-view-site",
+    "keywords": ["footer", "pied"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "footer.php",
+        "jsx": false
+    },
+    "supports": {
+        "mode": false,
+        "anchor": true,
+        "align": true
+    },
+    "align": "full"
+}
